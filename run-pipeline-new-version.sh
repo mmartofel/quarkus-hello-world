@@ -1,15 +1,14 @@
 
 COMMIT_COMMENT='Commit submitted: '`date`
 
-git add .
-git commit -m \'$COMMIT_COMMENT\'
-git push origin master 
+ git add .
+ git commit -m "$COMMIT_COMMENT"
+ git push origin master 
 
 sleep 3
 
 GIT_REV=`git rev-parse  HEAD`
 GIT_REV_SHORT=`git rev-parse --short HEAD`
-COMMIT_COMMENT='Commit submitted: '`date`
 
 echo
 echo 'Revission ID :' $GIT_REV
