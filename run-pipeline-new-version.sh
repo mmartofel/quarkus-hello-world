@@ -15,7 +15,7 @@ echo 'Revission ID :' $GIT_REV
 echo 'Short rev ID :' $GIT_REV_SHORT
 echo
 
-echo tkn pipeline start knative-pipeline  \
+tkn pipeline start knative-pipeline  \
   -p application=quarkus-hello-world \
   -p source-repo-url=https://github.com/mmartofel/quarkus-hello-world.git \
   -p source-revision=$GIT_REV\
