@@ -1,6 +1,8 @@
 
+COMMIT_COMMENT='Commit submitted: '`date`
+
 git add .
-git commit -m '$COMMIT_COMMENT'
+git commit -m \'$COMMIT_COMMENT\'
 git push origin master 
 
 sleep 3
