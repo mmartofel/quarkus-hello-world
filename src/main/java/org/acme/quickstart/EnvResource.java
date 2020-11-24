@@ -7,18 +7,15 @@ import javax.ws.rs.core.MediaType;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-@Path("/hello")
-public class GreetingResource {
-
+@Path("/env")
+public class EnvResource {
+    
     @ConfigProperty(name = "environment.name")
     String environment;
-
-    @ConfigProperty(name = "message")
-    String message;
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return message + " Your current environment is: " + environment + " - recently changed by Marek Martofel";
+        return environment;
     }
 }
