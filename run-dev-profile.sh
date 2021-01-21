@@ -1,1 +1,4 @@
-export QUARKUS_PROFILE=dev ; java -jar ./target/quarkus-hello-world-quarkus-1.0.2-SNAPSHOT-runner.jar
+
+mvn clean package quarkus:dev --D=skipTests
+
+# export QUARKUS_PROFILE=dev ; java -jar ./target/quarkus-hello-world-quarkus-1.0.2-SNAPSHOT-runner.jar
